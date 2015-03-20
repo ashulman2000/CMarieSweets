@@ -1,0 +1,24 @@
+{
+  "name": "cmariesweets",
+  "version": "0.0.1",
+  "description": "The public website for http://www.cmariesweets.com/",
+  "main": "www/index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thealah/CMarieSweets.git"
+  },
+  "author": "Stephen England (thealah@github)",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-config": "^0.2.2",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-htmlmin": "^0.4.0",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express": "^1.4.1",
+    "grunt-open": "^0.2.3"
+  }
+}
