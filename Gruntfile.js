@@ -32,6 +32,9 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+    htmllint: {
+      all: ["www/**/*.html"]
+    },
 		uglify: {
 			options: {
 				mangle: false
@@ -107,6 +110,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-config');
+  grunt.loadNpmTasks('grunt-html');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
