@@ -65,7 +65,7 @@ module.exports = function(grunt) {
     cssmin: {
       build: {
         files: {
-          '<%= grunt.config.get("destination") %>application.min.css': [ 'www/**.css' ]
+          '<%= grunt.config.get("destination") %>application.min.css': [ 'www/**/*.css' ]
         }
       }
     },
