@@ -23,32 +23,11 @@
         <script src="resources/jquery.easing.min.js"></script>
         <script src="resources/jquery.scrollsnap.js"></script>
         -->
-
         <link href="application.min.css" rel="stylesheet" type="text/css">
         <script src="index.js"></script>
         <script type="text/javascript" src="resources/slicebox/js/modernizr.custom.46884.js"></script>
-        <!-- Scrollsnap -->
-        <script type="text/javascript">
-        $(document).ready(function()
-        {
-            $(document).scrollsnap(
-            {
-                snaps: '.snap',
-                proximity: 200,
-                offset: -30
-            });
-        });
-        </script>
-        <!-- End Scrollsnap -->
-        <script>
-        $(document).ready(function()
-        {
-            $("#sticker").sticky(
-            {
-                topSpacing: 0
-            });
-        });
-        </script>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <!-- End Linked Data -->
         <!-- Google Analytics -->
         <script type="text/javascript">
@@ -69,10 +48,10 @@
     </head>
     <body>
         <div id="boundaries">
-            <div id="wrapper">
+            <div id="wrapper" class="container">
                 <!-- Begin Header -->
                 <div id="navcontainer">
-                    <img src="resources/images/headerskinny.png" width="1000" height="100" alt="banner">
+                    <img id="nav-banner" src="resources/images/headerskinny.png" alt="banner">
                     <div id="sticker">
                         <div id="navwrapper">
                             <div id="button">
@@ -105,138 +84,100 @@
                         <div id="triangleright"></div>
                     </div>
                 </div>
-                <div id="lace">
-                    <img src="resources/images/lace.png" width="1000" height="70" alt="lace">
-                </div>
-                <!-- Close Header -->
-                <!-- Begin Slider html -->
-                <div class="slidercontainer">
-                    <div class="slidercontent">
-                        <div>
-                            <img src="resources/slicebox/images/1.jpg" alt="Wedding Cake" width="1000" height="550">
+                <div class="content-container">
+                    <img src="resources/images/lace.png" alt="lace" id="lace">
+                    <div id="cake-carousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#cake-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#cake-carousel" data-slide-to="1"></li>
+                            <li data-target="#cake-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="resources/slicebox/images/1.jpg" alt="Wedding Cake">
+                                <div class="carousel-caption">
+                                    Wedding Cake
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="resources/slicebox/images/2.jpg" alt="Tiered Cakes">
+                                <div class="carousel-caption">
+                                    Tiered Cakes
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="resources/slicebox/images/4.jpg" alt="Cake Arrangement">
+                                <div class="carousel-caption">
+                                    Cake Arrangement
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <img src="resources/slicebox/images/2.jpg" alt="Tiered Cakes" height="550">
-                        </div>
-                        <div>
-                            <img src="resources/slicebox/images/4.jpg" alt="Cake Arrangement" width="1000" height="550">
-                        </div>
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#cake-carousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#cake-carousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                </div>
-                <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-                <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-                <script type="text/javascript" src="slick/slick.min.js"></script>
-                <script type="text/javascript">
-                $(document).ready(function()
-                {
-                    $('.slidercontent').slick(
-                    {
-                        dots: true,
-                        autoplay: true,
-                        speed: 500,
-                        infinite: true,
-                    });
-                });
-                </script>
-                <!-- End Slider HTML -->
-                <div id="indexhr">
                     <hr>
-                </div>
-                <!-- Begin "beyond slideshow" -->
-                <!-- JS Fade in -->
-                <script type="text/javascript">
-                $(document).ready(function()
-                {
-                    /* Every time the window is scrolled ... */
-                    $(window).scroll(function()
-                    {
-                        /* Check the location of each desired element */
-                        $('.hideme').each(function(i)
-                        {
-                            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-                            var bottom_of_window = $(window).scrollTop() + $(window).height();
-                            /* If the object is completely visible in the window, fade it it */
-                            if (bottom_of_window > bottom_of_object)
-                            {
-                                $(this).animate(
-                                {
-                                    'opacity': '1'
-                                }, 500);
-                            }
-                        });
-                    });
-                });
-                </script>
-                <!-- End JS Fade In -->
-                <div id="secondsection">
-                    <br>
-                    <hr>
-                </div>
-                <div class="indexstitch">
-                    <div class="hideme">
+                    <div class="indexstitch">
                         <div class="textleft"> Welcome
                             <br>
                             <div class="text100px">---- to ----</div>
                         </div>
                         <div class="textmiddle">C.Marie's Sweets</div>
-                        <div class="indexshpeal">-------------------------
-                            <br> Here you'll find only the very best sweets and confections- all baked especially for you, each and every time.</div>
-                        <div id="curlcontainer">
-                            <div id="curlleft">
-                                <img src="resources/images/curl_left.png" width="137" height="91" alt="curlleft">
-                            </div>
-                            <div id="curlright">
-                                <img src="resources/images/curl_right.png" width="137" height="91" alt="curlright">
-                            </div>
+                        <div class="indexshpeal">
+                            -------------------------
+                            <br> Here you'll find only the very best sweets and confections- all baked especially for you, each and every time.
                         </div>
-                    </div>
-                    <div id="indexthirdsection">
-                        <hr>
-                    </div>
-                </div>
-                <!-- 
-<div class="textfloatleft"><b>Looking for sweets?</b> For special occasions or not, C.Marie's has got you covered. Leave it to us to create the confection of your dreams- from the design to the oh-so-important taste, we'll leave no stone unturned. So kick back, relax, and enjoy browsing our website to find the perfect option or you!</div>
--->
-                <!-- End beyond slideshow" -->
-                <br>
-                <br>
-                <div class="titlesmall"> --- Updates & Specials ---</div>
-                <br>
-                <div class="floatmiddle">
-                    <div class="fullwidthstitch18">
-                        <strong>Getting married in Plano, Allen, or Frisco? Need a Wedding cake?</strong>
-                        <br> We would love to help! Now featuring exclusive bridal cake pricing and complimentary delivery to Plano/Frisco/Allen wedding venues.
-                        <br> Contact us today for a complimentary tasting at 682-970-9644 or e-mail us at
-                        <a href="mailto:cmariesweets@gmail.com">cmariesweets@gmail.com</a>
+                        <img src="resources/images/curl_left.png" width="137" height="91" alt="curlleft" id="curlleft">
+                        <img src="resources/images/curl_right.png" width="137" height="91" alt="curlright" id="curlright">
                     </div>
                     <br>
                     <br>
-                    <div class="fullwidthstitch">Check out some of our
-                        <a href="testimonies.html">Customer's Testomonies</a>!</div>
+                    <div class="titlesmall"> --- Updates & Specials ---</div>
                     <br>
-                    <br>
-                    <div class="galleryhr">
-                        <hr>
-                    </div>
-                    <br>
-                    <div class="galleryfacebook">
-                        <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1090941548328%26set%3Da.1090932828110.15560.1070161474%23%21%2Fpages%2FCMaries-Sweets%2F181037631908666&amp;width=600&amp;colorscheme=light&amp;connections=10&amp;stream=false&amp;header=true&amp;height=210" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:600px; height:210px;" allowTransparency="true"></iframe>
-                    </div>
-                    <script type="text/javascript" src="http://wwcdn.weddingwire.com/static/js/widgets/wwrated/2013.js"></script>
-                    <div id="ww-widget-wwrated-2013" class="ww-reset ww-widget-wwrated-2013">
-                        <a target="_blank" class="ww-top" href="http://www.weddingwire.com/" title="Weddings, Wedding, Wedding Venues"> </a>
-                        <a target="_blank" class="ww-bottom" href="http://www.weddingwire.com/reviews/maries-sweets-colleyville/7e5f751609182a82.html" title="C. Marie's Sweets Reviews , Dallas, Ft. Worth, Wichita Falls Wedding Cake"> </a>
-                    </div>
-                    <script type="text/javascript">
-                    WeddingWire.ensureInit(function()
-                    {
-                        WeddingWire.createWWRated2013(
+                    <div class="floatmiddle">
+                        <div class="fullwidthstitch18">
+                            <strong>Getting married in Plano, Allen, or Frisco? Need a Wedding cake?</strong>
+                            <br> We would love to help! Now featuring exclusive bridal cake pricing and complimentary delivery to Plano/Frisco/Allen wedding venues.
+                            <br> Contact us today for a complimentary tasting at 682-970-9644 or e-mail us at
+                            <a href="mailto:cmariesweets@gmail.com">cmariesweets@gmail.com</a>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="fullwidthstitch">Check out some of our
+                            <a href="testimonies.html">Customer's Testomonies</a>!</div>
+                        <br>
+                        <br>
+                        <div class="galleryhr">
+                            <hr>
+                        </div>
+                        <br>
+                        <div class="galleryfacebook">
+                            <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1090941548328%26set%3Da.1090932828110.15560.1070161474%23%21%2Fpages%2FCMaries-Sweets%2F181037631908666&amp;width=600&amp;colorscheme=light&amp;connections=10&amp;stream=false&amp;header=true&amp;height=210" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:600px; height:210px;" allowTransparency="true"></iframe>
+                        </div>
+                        <script type="text/javascript" src="http://wwcdn.weddingwire.com/static/js/widgets/wwrated/2013.js"></script>
+                        <div id="ww-widget-wwrated-2013" class="ww-reset ww-widget-wwrated-2013">
+                            <a target="_blank" class="ww-top" href="http://www.weddingwire.com/" title="Weddings, Wedding, Wedding Venues"> </a>
+                            <a target="_blank" class="ww-bottom" href="http://www.weddingwire.com/reviews/maries-sweets-colleyville/7e5f751609182a82.html" title="C. Marie's Sweets Reviews , Dallas, Ft. Worth, Wichita Falls Wedding Cake"> </a>
+                        </div>
+                        <script type="text/javascript">
+                        WeddingWire.ensureInit(function()
                         {
-                            "vendorId": "7e5f751609182a82"
+                            WeddingWire.createWWRated2013(
+                            {
+                                "vendorId": "7e5f751609182a82"
+                            });
                         });
-                    });
-                    </script>
-                    <!--close wrapper-->
+                        </script>
+                        <!--close wrapper-->
+                    </div>
                 </div>
             </div>
             <!-- Begin Footer -->

@@ -38,65 +38,17 @@
         <script src="resources/jquery.easing.min.js"></script>
         <script src="resources/jquery.scrollsnap.js"></script>
         -->
-
         <link href="application.min.css" rel="stylesheet" type="text/css">
         <script src="index.js"></script>
-
-        <!-- Scrollsnap -->
-        <script type="text/javascript">
-        $(document).ready(function()
-        {
-            $(document).scrollsnap(
-            {
-                snaps: '.snap',
-                proximity: 300,
-                offset: -30,
-            });
-        });
-        </script>
-        <!-- Scrollsnap -->
-        <!-- End Linked Data -->
-        <script>
-        $(document).ready(function()
-        {
-            $("#sticker").sticky(
-            {
-                topSpacing: 0
-            });
-        });
-        </script>
-        <!-- JS Fade in -->
-        <script type="text/javascript">
-        $(document).ready(function()
-        {
-            /* Every time the window is scrolled ... */
-            $(window).scroll(function()
-            {
-                /* Check the location of each desired element */
-                $('.hideme').each(function(i)
-                {
-                    var bottom_of_object = $(this).position().top + $(this).outerHeight();
-                    var bottom_of_window = $(window).scrollTop() + $(window).height();
-                    /* If the object is completely visible in the window, fade it it */
-                    if (bottom_of_window > bottom_of_object)
-                    {
-                        $(this).animate(
-                        {
-                            'opacity': '1'
-                        }, 500);
-                    }
-                });
-            });
-        });
-        </script>
-        <!-- End JS Fade In -->
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div id="boundaries">
-            <div id="wrapper">
+            <div id="wrapper" class="container">
                 <!-- Begin Header -->
                 <div id="navcontainer">
-                    <img src="resources/images/headerskinny.png" width="1000" height="100" alt="banner">
+                    <img id="nav-banner" src="resources/images/headerskinny.png" alt="banner">
                     <div id="sticker">
                         <div id="navwrapper">
                             <div id="button">
@@ -129,222 +81,226 @@
                         <div id="triangleright"></div>
                     </div>
                 </div>
-                <div id="lace">
-                    <img src="resources/images/lace.png" width="1000" height="70" alt="lace">
-                </div>
-                <!-- Close Header -->
-                <div class="weddingstitch">
-                    <div class="textleft"> It's What's
-                        <br>
-                        <div class="text100px">----
-                            <em>sweet</em> ----</div>
-                    </div>
-                    <div class="textmiddle">That Makes Memories</div>
-                    <div class="textmiddle">
-                        <em>Special</em>
-                    </div>
-                </div>
-                <div id="wedintrotext">Make your special day even more special with a signature C.Marie’s wedding cake. C.Marie’s cakes are made only with the finest ingredients, and baked from scratch every time.</div>
-                <div class="snap">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="wedtitle">--- Custom Wedding Cakes ---</div>
-                    <div class="wedcontainer">
-                        <div class="weddingcontentstitch">
-                            <div class="hideme">
-                                <div class="wedpic1">
-                                    <img src="resources/images/wedpic3.jpg" width="250" height="400" alt="WeddingPic3"> </div>
-                                <div class="wedsection">
-                                    <p>
-                                        <span class="headertext">Cakes specially tailored just for you.</span>
-                                        <br> Schedule a complimentary 45 minute consultation to discuss the style and tone of your event. During the appointment, we’ll collaborate on your vision and design. Please bring any inspirational materials, such as your invitation or pictures. C.Marie's tasting times are as follows:
-                                        <br>
-                                        <em>Wednesday thru Friday between 10am-2pm, and Saturdays at 10am-11am-or 12pm. </em>
-                                        <br> Saturday appointments book out a week in advance, so contact us today!</p>
-                                    <p>
-                                        <span class="headertext">Sweet occasions.</span>
-                                        <br> C.Marie’s also offers desert bars, sweets tables, and custom Grooms cakes. These additions are a great way to make you and your guests feel special. For pricing, please contact for an estimate.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="snap">
-                    <div class="wedcontainer">
-                        <div class="weddingcontentstitch">
-                            <div class="hideme">
-                                <div class="wedpic2">
-                                    <img src="resources/images/wedpic1.jpg" width="250" height="400" alt="WeddingCake1">
-                                </div>
-                                <div class="wedsection">
-                                    <p>
-                                        <span class="headertext">Purchase the cake of your dreams.</span>
-                                        <br> Wedding cakes vary in price depending on the decor, flavor, and quantity of servings. Buttercream cakes start at $3.75 per slice and fondant starts at $4.50. With the purchase of a Bride's cake, Groom's cakes start at $3.25 per serving. All custom designs and fondant-work are additional. Simply iced cupcakes are $2.75 each- any custom toppers or designs are additional. Wedding cakes are subject to a non-refundable deposit of half the total cost.</p>
-                                    <p>
-                                        <span class="headertext">A sweet experience.</span>
-                                        <br> C.Marie’s wants your special day to be memorable. From the exclusive cake stands and towers to the personalized cake topper, C.Marie’s pays attention to every detail.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="snap">
-                    <div class="wedcontainer">
-                        <div class="weddingcontentstitch">
-                            <div class="wedpic">
-                                <img src="resources/images/wedpic2.jpg" width="250" height="400" alt="WeddingPic2">
-                            </div>
-                            <div class="wedsection">
-                                <p>
-                                    <span class="headertext">Envelop your cake in the icing of your choice.</span>
-                                    <br> Italian Butter Cream ⋅ Rolled Fondant ⋅ Chocolate Ganache ⋅  Italian Cream Cheese (Cream Cheese has an extra charge of $.25 per slice, and Rolled Fondant will include a extra charge of $.50 per slice)</p>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="wedtitle">--- His and Her’s Wedding Cake Packages ---</div>
-                <br>
-                <br>
-                <div class="snap">
-                    <div class="wedpackagecontainer">
-                        <div class="weddingpackagestitch">
-                            <p>The featured buttercream cake designs and flavor options below are included in our bridal and groom's cake package options. Keep it simple and affordable! Order one of our trendy signature cakes with a complimentary groom's cake today.</p>
-                            <div class="packagetable">
-                                <table width="95%%" cellspacing="1">
-                                    <tr>
-                                        <td height="359">
-                                            <span class="wedimagetext">Rustic</span>
-                                            <br>
-                                            <div class="innershadow">
-                                                <img src="resources/images/weddingpackage/rustic.jpg" width="192" height="288" alt="Rustic">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="wedimagetext">Horizontal Texture</span>
-                                            <br>
-                                            <div class="innershadow">
-                                                <img src="resources/images/weddingpackage/horizontal.jpg" width="192" height="288" alt="Horizontal Texture">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="wedimagetext">Comb</span>
-                                            <br>
-                                            <div class="innershadow">
-                                                <img src="resources/images/weddingpackage/comb.jpg" width="192" height="288" alt="Comb">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span class="wedimagetext">Polka Dot</span>
-                                            <br>
-                                            <div class="innershadow">
-                                                <img src="resources/images/weddingpackage/polkadot.jpg" width="192" height="288" alt="Polka Dot">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="wedimagetext">Vertical Texture</span>
-                                            <br>
-                                            <div class="innershadow">
-                                                <img src="resources/images/weddingpackage/vertical.jpg" width="192" height="288" alt="Vertical Texture">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <span class="wedimagetext">Smooth Iced</span>
-                                            <br>
-                                            <div class="innershadow">
-                                                <img src="resources/images/weddingpackage/smooth.jpg" width="192" height="288" alt="Smooth Iced">
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
+                <div class="content-container">
+                    <img id="lace" src="resources/images/lace.png" alt="lace">
+                    <!-- Close Header -->
+                    <div class="weddingstitch">
+                        <div class="textleft"> It's What's
                             <br>
-                            <div class="packagetext">
-                                <p dir="ltr">Cake flavor options: (filled and frosted with your choice of vanilla or chocolate Italian buttercream)</p>
-                                <p dir="ltr">
-                                    <em>Vanilla butter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Red Velvet &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pink Champagne &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dutch Chocolate</em> &nbsp;&nbsp;&nbsp;</p>
-                                <p dir="ltr">&nbsp; </p>
-                                <p dir="ltr"> </p>
-                                <p dir="ltr">
-                                    <strong>
-                                        <em>Package Sizing and Pricing:</em>
-                                    </strong>
-                                    <p dir="ltr">
-                                        <em>Package A: Serving 100 total</em>
-                                    </p>
-                                    <p dir="ltr">Includes a 3 tier bridal cake serving 80 plus an 8 inch round groom's cake with an edible image.</p>
-                                    <p dir="ltr">Cost= $300 plus tax and applicable delivery charges
-                                        <br>
-                                    </p>
+                            <div class="text100px">----
+                                <em>sweet</em> ----</div>
+                        </div>
+                        <div class="textmiddle">That Makes Memories</div>
+                        <div class="textmiddle">
+                            <em>Special</em>
+                        </div>
+                    </div>
+                    <div id="wedintrotext">Make your special day even more special with a signature C.Marie’s wedding cake. C.Marie’s cakes are made only with the finest ingredients, and baked from scratch every time.</div>
+                    <div class="snap">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="wedtitle">--- Custom Wedding Cakes ---</div>
+                        <div class="wedcontainer">
+                            <div class="weddingcontentstitch">
+                                <div class="container">
+                                    <div class="col-md-3">
+                                        <img src="resources/images/wedpic3.jpg" class="media-object" width="250" height="400" alt="WeddingPic3">
+                                    </div>
+                                    <div class="col-md-9">
+                                        <h4>Cakes specially tailored just for you.</h4>
+                                        <p>
+                                            Schedule a complimentary 45 minute consultation to discuss the style and tone of your event. During the appointment, we’ll collaborate on your vision and design. Please bring any inspirational materials, such as your invitation or pictures. C.Marie's tasting times are as follows:
+                                        </p>
+                                        <p>
+                                            <em>Wednesday thru Friday between 10am-2pm, and Saturdays at 10am-11am-or 12pm. </em>
+                                            <br> Saturday appointments book out a week in advance, so contact us today!
+                                        </p>
+                                        <h4>Sweet occasions.</h4>
+                                        <p>
+                                            C.Marie’s also offers desert bars, sweets tables, and custom Grooms cakes. These additions are a great way to make you and your guests feel special. For pricing, please contact for an estimate.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="snap">
+                        <div class="wedcontainer">
+                            <div class="weddingcontentstitch">
+                                <div class="hideme">
+                                    <div class="wedpic2">
+                                        <img src="resources/images/wedpic1.jpg" width="250" height="400" alt="WeddingCake1">
+                                    </div>
+                                    <div class="wedsection">
+                                        <p>
+                                            <span class="headertext">Purchase the cake of your dreams.</span>
+                                            <br> Wedding cakes vary in price depending on the decor, flavor, and quantity of servings. Buttercream cakes start at $3.75 per slice and fondant starts at $4.50. With the purchase of a Bride's cake, Groom's cakes start at $3.25 per serving. All custom designs and fondant-work are additional. Simply iced cupcakes are $2.75 each- any custom toppers or designs are additional. Wedding cakes are subject to a non-refundable deposit of half the total cost.</p>
+                                        <p>
+                                            <span class="headertext">A sweet experience.</span>
+                                            <br> C.Marie’s wants your special day to be memorable. From the exclusive cake stands and towers to the personalized cake topper, C.Marie’s pays attention to every detail.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="snap">
+                        <div class="wedcontainer">
+                            <div class="weddingcontentstitch">
+                                <div class="wedpic">
+                                    <img src="resources/images/wedpic2.jpg" width="250" height="400" alt="WeddingPic2">
+                                </div>
+                                <div class="wedsection">
+                                    <p>
+                                        <span class="headertext">Envelop your cake in the icing of your choice.</span>
+                                        <br> Italian Butter Cream ⋅ Rolled Fondant ⋅ Chocolate Ganache ⋅  Italian Cream Cheese (Cream Cheese has an extra charge of $.25 per slice, and Rolled Fondant will include a extra charge of $.50 per slice)</p>
                                     <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="wedtitle">--- His and Her’s Wedding Cake Packages ---</div>
+                    <br>
+                    <br>
+                    <div class="snap">
+                        <div class="wedpackagecontainer">
+                            <div class="weddingpackagestitch">
+                                <p>The featured buttercream cake designs and flavor options below are included in our bridal and groom's cake package options. Keep it simple and affordable! Order one of our trendy signature cakes with a complimentary groom's cake today.</p>
+                                <div class="packagetable">
+                                    <table width="95%%" cellspacing="1">
+                                        <tr>
+                                            <td height="359">
+                                                <span class="wedimagetext">Rustic</span>
+                                                <br>
+                                                <div class="innershadow">
+                                                    <img src="resources/images/weddingpackage/rustic.jpg" width="192" height="288" alt="Rustic">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="wedimagetext">Horizontal Texture</span>
+                                                <br>
+                                                <div class="innershadow">
+                                                    <img src="resources/images/weddingpackage/horizontal.jpg" width="192" height="288" alt="Horizontal Texture">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="wedimagetext">Comb</span>
+                                                <br>
+                                                <div class="innershadow">
+                                                    <img src="resources/images/weddingpackage/comb.jpg" width="192" height="288" alt="Comb">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="wedimagetext">Polka Dot</span>
+                                                <br>
+                                                <div class="innershadow">
+                                                    <img src="resources/images/weddingpackage/polkadot.jpg" width="192" height="288" alt="Polka Dot">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="wedimagetext">Vertical Texture</span>
+                                                <br>
+                                                <div class="innershadow">
+                                                    <img src="resources/images/weddingpackage/vertical.jpg" width="192" height="288" alt="Vertical Texture">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <span class="wedimagetext">Smooth Iced</span>
+                                                <br>
+                                                <div class="innershadow">
+                                                    <img src="resources/images/weddingpackage/smooth.jpg" width="192" height="288" alt="Smooth Iced">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <br>
+                                <div class="packagetext">
+                                    <p dir="ltr">Cake flavor options: (filled and frosted with your choice of vanilla or chocolate Italian buttercream)</p>
                                     <p dir="ltr">
-                                        <em>Package B: Serving 150 total</em>
-                                    </p>
-                                    <p dir="ltr">Includes a 3 tier bridal cake serving 125 plus a 10 inch round groom's cake with an edible image.</p>
-                                    <p dir="ltr">Cost =$450 plus tax and applicable delivery charges</p>
-                                    <br>
-                                    <p dir="ltr">
-                                        <em>Package C: Serving 200 total</em>
-                                    </p>
-                                    <p dir="ltr">Includes a 4 tier bridal cake serving 150 plus a 12 inch round groom's cake with an edible image</p>
-                                    <p dir="ltr">Cost =$600 plus tax and applicable delivery charges </p>
-                                    <p> ----------------------------------------------------------------------------
-                                        <br>
-                                    </p>
-                                    <p dir="ltr">
-                                        <em>Need additional cake? &nbsp;Order back up sheet cakes! &nbsp;</em>
-                                    </p>
-                                    <p dir="ltr">Sheet cakes are priced at $2.75 a serving, and are filled and frosted to match the 3 layer wedding cake </p>
-                                    <p dir="ltr"> &nbsp;&nbsp;&nbsp;&nbsp; $137.50 ½ sheet (serves 50)</p>
-                                    <p dir="ltr"> &nbsp;&nbsp;&nbsp;&nbsp; $275 full sheet (serves 100)</p>
-                                    <br>
-                                    <p dir="ltr">
-                                        <em>All His and Her&rsquo;s specialty cake packages come with the choice of one of the six designs above and one chosen cake flavor per bride's and groom's cake. All cakes feature the round cake style. Any small changes to the packages or additional flavors are available for an additional cost.</em>
-                                    </p>
-                                    <p dir="ltr">
-                                        <em>Cake packages do not include a complimentary consultation, Please call us to schedule a $10 cupcake tasting box pick up to taste our most popular package flavors. Your wedding cake package may be ordered over the phone/email. </em>
-                                    </p>
-                                    <br>
+                                        <em>Vanilla butter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Red Velvet &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pink Champagne &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dutch Chocolate</em> &nbsp;&nbsp;&nbsp;</p>
+                                    <p dir="ltr">&nbsp; </p>
+                                    <p dir="ltr"> </p>
                                     <p dir="ltr">
                                         <strong>
-                                            <em>Delivery cost</em>
+                                            <em>Package Sizing and Pricing:</em>
                                         </strong>
-                                    </p>
-                                    <p dir="ltr"> $25 in Colleyville-Hurst-Bedford-Grapevine-Southlake (Weekday thru Saturday) &nbsp;(Sunday $35)</p>
-                                    <p dir="ltr"> $50-$75 over a 10 mile radius from Colleyville (Weekday thru Saturday) &nbsp;(Sunday $75)</p>
+                                        <p dir="ltr">
+                                            <em>Package A: Serving 100 total</em>
+                                        </p>
+                                        <p dir="ltr">Includes a 3 tier bridal cake serving 80 plus an 8 inch round groom's cake with an edible image.</p>
+                                        <p dir="ltr">Cost= $300 plus tax and applicable delivery charges
+                                            <br>
+                                        </p>
+                                        <br>
+                                        <p dir="ltr">
+                                            <em>Package B: Serving 150 total</em>
+                                        </p>
+                                        <p dir="ltr">Includes a 3 tier bridal cake serving 125 plus a 10 inch round groom's cake with an edible image.</p>
+                                        <p dir="ltr">Cost =$450 plus tax and applicable delivery charges</p>
+                                        <br>
+                                        <p dir="ltr">
+                                            <em>Package C: Serving 200 total</em>
+                                        </p>
+                                        <p dir="ltr">Includes a 4 tier bridal cake serving 150 plus a 12 inch round groom's cake with an edible image</p>
+                                        <p dir="ltr">Cost =$600 plus tax and applicable delivery charges </p>
+                                        <p> ----------------------------------------------------------------------------
+                                            <br>
+                                        </p>
+                                        <p dir="ltr">
+                                            <em>Need additional cake? &nbsp;Order back up sheet cakes! &nbsp;</em>
+                                        </p>
+                                        <p dir="ltr">Sheet cakes are priced at $2.75 a serving, and are filled and frosted to match the 3 layer wedding cake </p>
+                                        <p dir="ltr"> &nbsp;&nbsp;&nbsp;&nbsp; $137.50 ½ sheet (serves 50)</p>
+                                        <p dir="ltr"> &nbsp;&nbsp;&nbsp;&nbsp; $275 full sheet (serves 100)</p>
+                                        <br>
+                                        <p dir="ltr">
+                                            <em>All His and Her&rsquo;s specialty cake packages come with the choice of one of the six designs above and one chosen cake flavor per bride's and groom's cake. All cakes feature the round cake style. Any small changes to the packages or additional flavors are available for an additional cost.</em>
+                                        </p>
+                                        <p dir="ltr">
+                                            <em>Cake packages do not include a complimentary consultation, Please call us to schedule a $10 cupcake tasting box pick up to taste our most popular package flavors. Your wedding cake package may be ordered over the phone/email. </em>
+                                        </p>
+                                        <br>
+                                        <p dir="ltr">
+                                            <strong>
+                                                <em>Delivery cost</em>
+                                            </strong>
+                                        </p>
+                                        <p dir="ltr"> $25 in Colleyville-Hurst-Bedford-Grapevine-Southlake (Weekday thru Saturday) &nbsp;(Sunday $35)</p>
+                                        <p dir="ltr"> $50-$75 over a 10 mile radius from Colleyville (Weekday thru Saturday) &nbsp;(Sunday $75)</p>
+                                </div>
+                                <br>
+                                <br>
                             </div>
-                            <br>
-                            <br>
                         </div>
                     </div>
                 </div>

@@ -34,25 +34,16 @@
         <link href="3_sweets_styles.css" rel="stylesheet" type="text/css">
         <script src="resources/jquery.sticky.js"></script>
         -->
-
         <link href="application.min.css" rel="stylesheet" type="text/css">
         <script src="index.js"></script>
-        <script>
-        $(document).ready(function()
-        {
-            $("#sticker").sticky(
-            {
-                topSpacing: 0
-            });
-        });
-        </script>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div id="boundaries">
-            <div id="wrapper">
-                <!-- Begin Header -->
+            <div id="wrapper" class="container">
                 <div id="navcontainer">
-                    <img src="resources/images/headerskinny.png" width="1000" height="100" alt="banner">
+                    <img id="nav-banner" src="resources/images/headerskinny.png" alt="banner">
                     <div id="sticker">
                         <div id="navwrapper">
                             <div id="button">
@@ -85,139 +76,138 @@
                         <div id="triangleright"></div>
                     </div>
                 </div>
-                <div id="lace">
-                    <img src="resources/images/lace.png" width="1000" height="70" alt="lace">
-                </div>
-                <!-- Close Header -->
-                <div class="titlesmall">--- Make Your
-                    <em>Sweetest</em> Dream Come True ---</div>
-                <div class="contactstitch">
-                    <div class="floatmiddle">
-                        <div class="tableleftmargin">
-                            <table width="100%" border="0" cellspacing="5">
-                                <tr>
-                                    <td width="48%">
-                                        <div class="mapshadow">
-                                            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=C.+Marie's+Sweets+Bakery,+Cheek-Sparger+Road,+Colleyville,+TX&amp;aq=0&amp;oq=cmarie's+&amp;sll=31.168934,-100.076842&amp;sspn=11.794022,19.753418&amp;ie=UTF8&amp;hq=C.+Marie's+Sweets+Bakery,&amp;hnear=Cheek-Sparger+Rd,+Colleyville,+Tarrant,+Texas&amp;t=m&amp;ll=32.872379,-97.149096&amp;spn=0.012615,0.018239&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-                                            <br />
-                                            <small>
-                                                <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=C.+Marie's+Sweets+Bakery,+Cheek-Sparger+Road,+Colleyville,+TX&amp;aq=0&amp;oq=cmarie's+&amp;sll=31.168934,-100.076842&amp;sspn=11.794022,19.753418&amp;ie=UTF8&amp;hq=C.+Marie's+Sweets+Bakery,&amp;hnear=Cheek-Sparger+Rd,+Colleyville,+Tarrant,+Texas&amp;t=m&amp;ll=32.872379,-97.149096&amp;spn=0.012615,0.018239&amp;z=15&amp;iwloc=A" style="color:#0000FF;text-align:left"></a>
-                                            </small>
-                                        </div>
-                                    </td>
-                                    <td width="48%">
-                                        <table width="100%" border="0" cellspacing="5">
-                                            <td width="51%">
-                                                <div class="36font">
-                                                    <b>
-                                                        <em>Hours of Operation</em>
-                                                    </b>
-                                                    <tr>
-                                                        <td>Monday</td>
-                                                        <td width="49%">Closed</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Tuesday</td>
-                                                        <td>Closed</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Wednesday</td>
-                                                        <td>9am - 3pm</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Thursday</td>
-                                                        <td>9am - 3pm</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Friday</td>
-                                                        <td>9am - 3pm</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Saturday</td>
-                                                        <td>9am - 12pm</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Sunday</td>
-                                                        <td>Closed</td>
-                                                    </tr>
-                                        </table>
-                                        <td width="52%">
-                                            <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1090941548328%26set%3Da.1090932828110.15560.1070161474%23%21%2Fpages%2FCMaries-Sweets%2F181037631908666&amp;width=200&amp;colorscheme=light&amp;connections=10&amp;stream=false&amp;header=true&amp;height=287" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:287px;" allowTransparency="true"></iframe>
+                <div class="content-container">
+                    <img src="resources/images/lace.png" alt="lace" id="lace">
+                    <div class="titlesmall">--- Make Your
+                        <em>Sweetest</em> Dream Come True ---</div>
+                    <div class="contactstitch">
+                        <div class="floatmiddle">
+                            <div class="tableleftmargin">
+                                <table width="100%" border="0" cellspacing="5">
+                                    <tr>
+                                        <td width="48%">
+                                            <div class="mapshadow">
+                                                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=C.+Marie's+Sweets+Bakery,+Cheek-Sparger+Road,+Colleyville,+TX&amp;aq=0&amp;oq=cmarie's+&amp;sll=31.168934,-100.076842&amp;sspn=11.794022,19.753418&amp;ie=UTF8&amp;hq=C.+Marie's+Sweets+Bakery,&amp;hnear=Cheek-Sparger+Rd,+Colleyville,+Tarrant,+Texas&amp;t=m&amp;ll=32.872379,-97.149096&amp;spn=0.012615,0.018239&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+                                                <br />
+                                                <small>
+                                                    <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=C.+Marie's+Sweets+Bakery,+Cheek-Sparger+Road,+Colleyville,+TX&amp;aq=0&amp;oq=cmarie's+&amp;sll=31.168934,-100.076842&amp;sspn=11.794022,19.753418&amp;ie=UTF8&amp;hq=C.+Marie's+Sweets+Bakery,&amp;hnear=Cheek-Sparger+Rd,+Colleyville,+Tarrant,+Texas&amp;t=m&amp;ll=32.872379,-97.149096&amp;spn=0.012615,0.018239&amp;z=15&amp;iwloc=A" style="color:#0000FF;text-align:left"></a>
+                                                </small>
+                                            </div>
                                         </td>
-                            </table>
+                                        <td width="48%">
+                                            <table width="100%" border="0" cellspacing="5">
+                                                <td width="51%">
+                                                    <div class="36font">
+                                                        <b>
+                                                            <em>Hours of Operation</em>
+                                                        </b>
+                                                        <tr>
+                                                            <td>Monday</td>
+                                                            <td width="49%">Closed</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Tuesday</td>
+                                                            <td>Closed</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Wednesday</td>
+                                                            <td>9am - 3pm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Thursday</td>
+                                                            <td>9am - 3pm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Friday</td>
+                                                            <td>9am - 3pm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Saturday</td>
+                                                            <td>9am - 12pm</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Sunday</td>
+                                                            <td>Closed</td>
+                                                        </tr>
+                                            </table>
+                                            <td width="52%">
+                                                <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1090941548328%26set%3Da.1090932828110.15560.1070161474%23%21%2Fpages%2FCMaries-Sweets%2F181037631908666&amp;width=200&amp;colorscheme=light&amp;connections=10&amp;stream=false&amp;header=true&amp;height=287" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:287px;" allowTransparency="true"></iframe>
+                                            </td>
+                                </table>
+                                </div>
+                            </div>
+                            <div class="contacthr">
+                                <hr>
+                            </div>
+                            <div id="contacttable">
+                                <table width="933" border="0" cellspacing="0">
+                                    <tr>
+                                        <td width="271">
+                                            <strong>
+                                                <em>Bakery Address</em>
+                                            </strong>
+                                        </td>
+                                        <td width="188">
+                                            <strong>
+                                                <em>Phone</em>
+                                            </strong>
+                                        </td>
+                                        <td width="468">
+                                            <strong>
+                                                <em>Email</em>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tara Village Shopping Center
+                                            <br> 1009 Cheek-Sparger Road Suite 126
+                                            <br> Colleyville TX 76034</td>
+                                        <td>
+                                            <p>(682) 970-9644</p>
+                                            <p>&nbsp;</p>
+                                        </td>
+                                        <td>
+                                            <p>
+                                                <a href="mailto:cmariesweets@gmail.com">cmariesweets@gmail.com</a>
+                                            </p>
+                                            <p>
+                                                <br>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
-                        <div class="contacthr">
-                            <hr>
+                        <br>
+                        <div class="titlesmall"> --- References ---</div>
+                        <div class="textfloatleft">
+                            <p>Ferange Villa- Wedding and Event Venue- Hurst
+                                <br>
+                                <a href="http://www.myweddingvilla.com/">www.myweddingvilla.com</a>
+                                <br> 817-514-5333
+                            </p>
+                            <p>Swing'n D Ranch- Wedding and Event Venue- Plano
+                                <br>
+                                <a href="http://www.swingindranch.com/">www.swingindranch.com</a>
+                                <br> 972-221-0167
+                            </p>
+                            <p>Monte Slaver- Entertainment
+                                <br>
+                                <a href="http://www.monteslaver.com/">www.monteslaver.com</a>
+                                <br> 972-746-6663
+                            </p>
+                            <p>Jamie Huffman Photography
+                                <br>
+                                <a href="http://www.jamiehuffman.com/">www.jamiehuffman.com</a>
+                                <br> 21-507-7928
+                            </p>
+                            <p>Rhonda Brown- Florist
+                                <br>
+                                <a href="http://www.fd2customfloral.com/">www.fd2customfloral.com</a>
+                                <br> 972-906-5689 </p>
                         </div>
-                        <div id="contacttable">
-                            <table width="933" border="0" cellspacing="0">
-                                <tr>
-                                    <td width="271">
-                                        <strong>
-                                            <em>Bakery Address</em>
-                                        </strong>
-                                    </td>
-                                    <td width="188">
-                                        <strong>
-                                            <em>Phone</em>
-                                        </strong>
-                                    </td>
-                                    <td width="468">
-                                        <strong>
-                                            <em>Email</em>
-                                        </strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Tara Village Shopping Center
-                                        <br> 1009 Cheek-Sparger Road Suite 126
-                                        <br> Colleyville TX 76034</td>
-                                    <td>
-                                        <p>(682) 970-9644</p>
-                                        <p>&nbsp;</p>
-                                    </td>
-                                    <td>
-                                        <p>
-                                            <a href="mailto:cmariesweets@gmail.com">cmariesweets@gmail.com</a>
-                                        </p>
-                                        <p>
-                                            <br>
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
+                        <!-- close contact links div -->
                     </div>
-                    <br>
-                    <div class="titlesmall"> --- References ---</div>
-                    <div class="textfloatleft">
-                        <p>Ferange Villa- Wedding and Event Venue- Hurst
-                            <br>
-                            <a href="http://www.myweddingvilla.com/">www.myweddingvilla.com</a>
-                            <br> 817-514-5333
-                        </p>
-                        <p>Swing'n D Ranch- Wedding and Event Venue- Plano
-                            <br>
-                            <a href="http://www.swingindranch.com/">www.swingindranch.com</a>
-                            <br> 972-221-0167
-                        </p>
-                        <p>Monte Slaver- Entertainment
-                            <br>
-                            <a href="http://www.monteslaver.com/">www.monteslaver.com</a>
-                            <br> 972-746-6663
-                        </p>
-                        <p>Jamie Huffman Photography
-                            <br>
-                            <a href="http://www.jamiehuffman.com/">www.jamiehuffman.com</a>
-                            <br> 21-507-7928
-                        </p>
-                        <p>Rhonda Brown- Florist
-                            <br>
-                            <a href="http://www.fd2customfloral.com/">www.fd2customfloral.com</a>
-                            <br> 972-906-5689 </p>
-                    </div>
-                    <!-- close contact links div -->
                 </div>
             </div>
             <!-- Begin Footer -->
