@@ -188,24 +188,23 @@ opacity:0;
 }
 
 .fullwidthstitch18 {
-	
-width: 800px;
-margin-left: auto;
-margin-right: auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 20px;
 	padding-bottom:20px;
-  background: #FFF;
-   color: #000;
-   font-size: 18px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #000;
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #CCC;
-   font-weight: normal;		
+	background: #FFF;
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.3em;
+	border: 2px dashed #000;
+	border-radius: 10px;
+	box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+	text-shadow: -1px -1px #CCC;
+	font-weight: normal;		
 }
 
 .26pxfont {
@@ -835,6 +834,16 @@ margin-right: auto;
 .stitched-border h4 {
   font: 20pt'dancing script',cursive,serif;
 }
+.stitched-border.pink {
+	background-color: #FF829B;
+	color: white;
+	font-family: 'bad script', serif;
+	font-size: 30px;
+	text-shadow: rgb(170, 48, 48) -1px -1px 0px;
+	border-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 .fancy-header {
   font: 25px 'bad script',serif;
 }
@@ -858,6 +867,12 @@ margin-right: auto;
    box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
    text-shadow: -1px -1px #CCC;
    font-weight: normal;	
+}
+
+.facebook-like-box {
+	width: 100% !important;
+	height: 180px;
+	border-bottom: 1px solid #d8dfea;
 }
 
 /* 				End Contact Styles				 */
