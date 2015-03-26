@@ -267,6 +267,12 @@ margin-left: 1000px;
 
 h1.big-header {
 	font: 50px 'dancing script',cursive,serif;
+} 
+h3.nice-header {
+  font: 25pt'dancing script',cursive,serif;
+}
+h4.nice-header {
+  font: 20pt'dancing script',cursive,serif;
 }
 
 # navbar a {
