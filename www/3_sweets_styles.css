@@ -44,6 +44,9 @@ body {
 	margin-top: -10px;
 }
 
+.carousel-inner .item img {
+	width: 100%;
+}
 
 /* Tags & Common Styles */
 
@@ -256,6 +259,7 @@ margin-left: 1000px;
 
 .content-container {
 	position: relative;
+	padding: 10px;
 }
 
 # navbar a {
@@ -725,8 +729,6 @@ vertical-align:middle;
 .wedpackagecontainer {
 width: 1000px;
 height: auto;
-
-
 }
 
 #wedintrotext {
@@ -737,7 +739,6 @@ height: auto;
 	margin-right: auto;
 	text-align: center;
 	font: italic 24px 'Cardo', serif;
-	margin-bottom: -60px;
 }
 	
 #weddingtable {
@@ -806,7 +807,25 @@ box-shadow: 0 0 17px -8px #000;
 width: 500px;
 margin-left: auto;
 margin-right: auto;
-	
+}
+
+.stitched-border {
+   border: 2px dashed #000;
+   border-radius: 10px;
+   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   font-size: 24px;
+   text-shadow: rgb(204, 204, 204) -1px -1px 0px;
+}
+.col-md-11.stitched-border {
+   margin-left: 4%;
+   margin-right: 4%;
+   padding: 10px;
+}
+.stitched-border h4 {
+  font: 20pt'dancing script',cursive,serif;
+}
+.fancy-header {
+  font: 25px 'bad script',serif;
 }
 
 .contactstitch {
