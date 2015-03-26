@@ -69,7 +69,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    /*htmlmin: {
+    htmlmin: {
       dist: {
         options: {
           removeComments: false,
@@ -84,7 +84,7 @@ module.exports = function(grunt) {
           }
         ]
       }
-    },*/
+    },
     concat: {
       options: {
         separator: ';'
@@ -131,12 +131,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-prettify');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  //grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-open');
 
-  grunt.registerTask('default', ['config:dev', 'clean', 'copy', 'uglify', 'cssmin', 'concat', 'cssmin', 'express', 'open', 'watch']);
-  grunt.registerTask('build', ['config:prod', 'clean', 'copy', 'uglify', 'cssmin', 'concat']);
+  grunt.registerTask('default', ['config:dev', 'clean', 'copy', 'uglify', 'cssmin', 'htmlmin', 'concat', 'cssmin', 'express', 'open', 'watch']);
+  grunt.registerTask('build', ['config:prod', 'clean', 'copy', 'uglify', 'cssmin', 'htmlmin', 'concat']);
 };
