@@ -764,8 +764,8 @@ height: auto;
 }
 
 #wedintrotext {
-	width: 800px;
-	height: auto;
+	/*width: 800px;
+	height: auto;*/
 	padding-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
