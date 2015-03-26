@@ -32,6 +32,23 @@ module.exports = function(grunt) {
         }
       }
     },
+    prettify: {
+      options: {
+        "indent": 4,
+        "condense": true,
+        "indent_inner_html": true,
+        "unformatted": [
+          "pre"
+        ]
+      },
+      all: {
+        expand: true,
+        cwd: 'www/',
+        ext: '.html',
+        src: ['*.html'],
+        dest: 'www/'
+      }
+    },
     htmllint: {
       all: ["www/**/*.html"]
     },
@@ -52,11 +69,11 @@ module.exports = function(grunt) {
         }
       }
     },
-    htmlmin: {
+    /*htmlmin: {
       dist: {
         options: {
-          removeComments: true,
-          collapseWhitespace: true
+          removeComments: false,
+          collapseWhitespace: false
         },
         files: [
           {
@@ -67,7 +84,7 @@ module.exports = function(grunt) {
           }
         ]
       }
-    },
+    },*/
     concat: {
       options: {
         separator: ';'
@@ -111,14 +128,15 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-config');
   grunt.loadNpmTasks('grunt-html');
+  grunt.loadNpmTasks('grunt-prettify');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  //grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-open');
 
-  grunt.registerTask('default', ['config:dev', 'clean', 'copy', 'uglify', 'cssmin', 'htmlmin', 'concat', 'cssmin', 'express', 'open', 'watch']);
-  grunt.registerTask('build', ['config:prod', 'clean', 'copy', 'uglify', 'cssmin', 'htmlmin', 'concat']);
+  grunt.registerTask('default', ['config:dev', 'clean', 'copy', 'uglify', 'cssmin', 'concat', 'cssmin', 'express', 'open', 'watch']);
+  grunt.registerTask('build', ['config:prod', 'clean', 'copy', 'uglify', 'cssmin', 'concat']);
 };

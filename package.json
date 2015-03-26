@@ -20,6 +20,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-express": "^1.4.1",
     "grunt-html": "^4.0.2",
-    "grunt-open": "^0.2.3"
+    "grunt-open": "^0.2.3",
+    "grunt-prettify": "^0.4.0"
   }
 }
