@@ -867,7 +867,7 @@ margin-right: auto;
 	padding-bottom: 20px;
 }
 .stitched-border.pink .bigger {
-  font: 130px'dancing script',cursive,serif;
+  font: 80px'dancing script',cursive,serif;
   text-align: center;
 }
 .stitched-border.pink .tagline {
@@ -1232,7 +1232,7 @@ margin-left: 85px;
 
 #footer {
 	z-index: -2;
-	width: 1000px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	height: 15px;
