@@ -8,6 +8,7 @@
         <!-- Meta -->
         <meta name="description" content="Welcome to C.Marie's Sweets! Here, you'll find only the best cakes and sweets for your wedding, birthday, or event- all affordable, delicious, and baked from scratch each and every time!">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Levi Slaver -- levislaver@gmail.com" />
         <meta name="keywords" content="Wedding Cakes, Birthday cakes, Baby Shower cakes, Special event cakes, Wedding Shower Cakes, Cupcakes, cake pops, groom’s cakes, grooms cakes, custom cakes, Colleyville, grapevine, southlake, bedford, Hurst, Uless, Azel, Keller, Plano, Frisco, Allen, Mckinney, Wedding Cake, Birthday cake, Baby Shower cake, Special event cake, Wedding Cake, Cupcake, cake pop, grooms cake, groom cake, custom cake, Bakery, Bakeries, C Marie, c.marie, cmarie, cmariessweets, DFW" />
         <!-- End Meta -->
@@ -23,11 +24,11 @@
         <script src="resources/jquery.easing.min.js"></script>
         <script src="resources/jquery.scrollsnap.js"></script>
         -->
-        <link href="application.min.css" rel="stylesheet" type="text/css">
-        <script src="index.js"></script>
         <script type="text/javascript" src="resources/slicebox/js/modernizr.custom.46884.js"></script>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="application.min.css" rel="stylesheet" type="text/css">
+        <script src="index.js"></script>
         <!-- End Linked Data -->
         <!-- Google Analytics -->
         <script type="text/javascript">
@@ -52,10 +53,20 @@
                 <!-- Begin Header -->
                 <div id="navcontainer">
                     <img id="nav-banner" src="resources/images/headerskinny.png" alt="banner">
-                    <div id="sticker">
-                        <div id="navwrapper">
-                            <div id="button">
-                                <ul>
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                                <ul class="nav navbar-nav">
                                     <li>
                                         <a href="index.html" class="current">Home</a>
                                     </li>
@@ -80,7 +91,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                 </div>
                 <div class="content-container">
                     <img src="resources/images/lace.png" alt="lace" id="lace">
@@ -129,20 +140,23 @@
                                 Welcome to C.Marie's Sweets
                             </p>
                             <hr />
-                                <div class="tagline">
-                                    Here you'll find only the very best sweets and confections- all baked especially for you, each and every time.
-                                </div>
+                            <div class="tagline">
+                                Here you'll find only the very best sweets and confections- all baked especially for you, each and every time.
+                            </div>
                             <br />
                             <br />
                             <br />
                             <br />
                             <img src="resources/images/curl_left.png" width="137" height="91" alt="curlleft" id="curlleft">
                             <img src="resources/images/curl_right.png" width="137" height="91" alt="curlright" id="curlright">
-                         </div>
+                        </div>
                     </div>
                     <br>
                     <br>
-                    <div class="titlesmall"> --- Updates & Specials ---</div>
+                    <div class="titlesmall">
+                        <span class="hidden-xs">---</span> Updates & Specials
+                        <span class="hidden-xs">---</span>
+                    </div>
                     <br>
                     <div class="floatmiddle">
                         <div class="fullwidthstitch18">

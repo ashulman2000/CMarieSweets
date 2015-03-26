@@ -7,6 +7,7 @@
         <!-- Meta -->
         <meta name="description" content="Welcome to C.Marie's Sweets! Here, you'll find only the best cakes and sweets for your wedding, birthday, or event- all affordable, delicious, and baked from scratch each and every time!">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Levi Slaver -- levislaver@gmail.com" />
         <meta name="keywords" content="Wedding Cakes, Birthday cakes, Baby Shower cakes, Special event cakes, Wedding Shower Cakes, Cupcakes, cake pops, groom’s cakes, grooms cakes, custom cakes, Colleyville, grapevine, southlake, bedford, Hurst, Uless, Azel, Keller, Plano, Frisco, Allen, Mckinney, Wedding Cake, Birthday cake, Baby Shower cake, Special event cake, Wedding Cake, Cupcake, cake pop, grooms cake, groom cake, custom cake, Bakery, Bakeries, C Marie, c.marie, cmarie, cmariessweets, DFW" />
         <!-- End Meta -->
@@ -30,6 +31,8 @@
         <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic' rel='stylesheet' type='text/css'>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <!-- Old Linked Data
         <link href="3_sweets_styles.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="slick/slick.css" />
@@ -37,8 +40,6 @@
         -->
         <link href="application.min.css" rel="stylesheet" type="text/css">
         <script src="index.js"></script>
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <!-- End Linked Data -->
     </head>
     <body>
@@ -47,10 +48,20 @@
                 <!-- Begin Header -->
                 <div id="navcontainer">
                     <img id="nav-banner" src="resources/images/headerskinny.png" alt="banner">
-                    <div id="sticker">
-                        <div id="navwrapper">
-                            <div id="button">
-                                <ul>
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                                <ul class="nav navbar-nav">
                                     <li>
                                         <a href="index.html" class="current">Home</a>
                                     </li>
@@ -75,12 +86,15 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                 </div>
                 <div class="content-container with-top-padding">
                     <img src="resources/images/lace.png" alt="lace" id="lace">
                     <!-- Close Header -->
-                    <div class="title"><span class="hidden-xs">---</span> Gallery <span class="hidden-xs">---</span></div>
+                    <div class="title">
+                        <span class="hidden-xs">---</span> Gallery
+                        <span class="hidden-xs">---</span>
+                    </div>
                     <!-- Begin Gallery -->
                     <script type="text/javascript" src="http://slideshow.triptracker.net/slide.js"></script>
                     <script type="text/javascript">
@@ -200,27 +214,30 @@
                     eventCakes.add('resources/images/gallery/Events/41.jpg');
                     eventCakes.add('resources/images/gallery/Events/42.jpg');
                     </script>
-                    
                     <div class="col-md-4">
-                        <a href="javascript:void(bridesCakes.show(0))"><h3 class="text-center nice-header">Wedding Cakes</h3></a>
+                        <a href="javascript:void(bridesCakes.show(0))">
+                            <h3 class="text-center nice-header">Wedding Cakes</h3>
+                        </a>
                         <div class="gallerystitch">
                             <a href="javascript:void(groomsCakes.show(0))">
                                 <img src="resources/images/gallery/bridesThumbnail.jpg" class="img-rounded img-responsive" alt="wedding cake gallery">
                             </a>
                         </div>
                     </div>
-                    
                     <div class="col-md-4">
-                        <a href="javascript:void(groomsCakes.show(0))"><h3 class="text-center nice-header">Groom's Cakes</h3></a>
+                        <a href="javascript:void(groomsCakes.show(0))">
+                            <h3 class="text-center nice-header">Groom's Cakes</h3>
+                        </a>
                         <div class="gallerystitch">
                             <a href="javascript:void(groomsCakes.show(0))">
                                 <img src="resources/images/gallery/groomsThumbnail.png" class="img-rounded img-responsive" alt="groom's cake gallery">
                             </a>
                         </div>
                     </div>
-                    
                     <div class="col-md-4">
-                        <a href="javascript:void(eventCakes.show(0))"><h3 class="text-center nice-header">Event Cakes</h3></a>
+                        <a href="javascript:void(eventCakes.show(0))">
+                            <h3 class="text-center nice-header">Event Cakes</h3>
+                        </a>
                         <div class="gallerystitch">
                             <a href="javascript:void(eventCakes.show(0))">
                                 <img src="resources/images/gallery/eventsThumbnail.jpg" class="img-rounded img-responsive" alt="event cake gallery">

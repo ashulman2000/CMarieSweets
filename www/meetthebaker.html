@@ -7,6 +7,7 @@
         <!-- Meta -->
         <meta name="description" content="Welcome to C.Marie's Sweets! Here, you'll find only the best cakes and sweets for your wedding, birthday, or event- all affordable, delicious, and baked from scratch each and every time!">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Levi Slaver -- levislaver@gmail.com" />
         <meta name="keywords" content="Wedding Cakes, Birthday cakes, Baby Shower cakes, Special event cakes, Wedding Shower Cakes, Cupcakes, cake pops, groom’s cakes, grooms cakes, custom cakes, Colleyville, grapevine, southlake, bedford, Hurst, Uless, Azel, Keller, Plano, Frisco, Allen, Mckinney, Wedding Cake, Birthday cake, Baby Shower cake, Special event cake, Wedding Cake, Cupcake, cake pop, grooms cake, groom cake, custom cake, Bakery, Bakeries, C Marie, c.marie, cmarie, cmariessweets, DFW" />
         <!-- End Meta -->
@@ -30,6 +31,8 @@
         <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic' rel='stylesheet' type='text/css'>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <!-- Old Linked Data
         <link href="3_sweets_styles.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="slick/slick.css" />
@@ -37,8 +40,6 @@
         -->
         <link href="application.min.css" rel="stylesheet" type="text/css">
         <script src="index.js"></script>
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div id="boundaries">
@@ -46,10 +47,20 @@
                 <!-- Begin Header -->
                 <div id="navcontainer">
                     <img id="nav-banner" src="resources/images/headerskinny.png" alt="banner">
-                    <div id="sticker">
-                        <div id="navwrapper">
-                            <div id="button">
-                                <ul>
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                                <ul class="nav navbar-nav">
                                     <li>
                                         <a href="index.html" class="current">Home</a>
                                     </li>
@@ -74,7 +85,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                 </div>
                 <div class="content-container with-top-padding">
                     <img src="resources/images/lace.png" alt="lace" id="lace">
@@ -82,37 +93,39 @@
                         <em>Sweetest</em> Ones of Them All ---</div>
                     <div class="row">
                         <div class="col-md-11 stitched-border">
-                            <div class="row">
-                        <div class="col-md-8">
-                            <p>
-                                <span class="meetname">Christine Shulman</span>
-                                <br> Wearing “mom’s little helper apron” as a young girl, Christine started baking as soon as she could hold a whisk. As she grew, her talents grew as well; always delighting family and friends with her creations. Christine fostered her passion for baking at El Centro College of Baking, then apprenticed at the Four Seasons Resort in Dallas.
-                                <br> Today, Christine is pursuing her dreams creating sweets with you in mind. Her custom cakes, cookies, and confections- always baked from scratch, are simply delicious and beautiful. Christine understands that it’s what sweet that makes memories special!</p>
-                        </div>
-                            <div class="col-md-4">
-                                <img src="resources/images/meet_christine.jpg" alt="Christine!" class="center-block img-rounded"> 
+                        
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>
+                                        <span class="meetname">Christine Shulman</span>
+                                        <br> Wearing “mom’s little helper apron” as a young girl, Christine started baking as soon as she could hold a whisk. As she grew, her talents grew as well; always delighting family and friends with her creations. Christine fostered her passion for baking at El Centro College of Baking, then apprenticed at the Four Seasons Resort in Dallas.
+                                        <br> Today, Christine is pursuing her dreams creating sweets with you in mind. Her custom cakes, cookies, and confections- always baked from scratch, are simply delicious and beautiful. Christine understands that it’s what sweet that makes memories special!</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="resources/images/meet_christine.jpg" alt="Christine!" class="center-block img-rounded">
+                                </div>
                             </div>
                         </div>
-                        </div>
-                        </div>
                     </div>
-                    <br>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-11 stitched-border">
-                            <div class="row">
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-11 stitched-border">
+                    
+                        <div class="row">
                             <div class="col-md-8">
                                 <span class="meetname">Amy Pittman-Heglund</span>
                                 <br> Born and raised in Chicago, Amy has been baking in 5 star resturants and hotels for over 20 years. As an award winning chef, Amy chose pastries as a specialty and has loved baking a decorating cakes for all special occasions! Whether you are a bride, groom, celebrity, or birthday guy/gal- Amy has the perfect cake for your special occasion!
-                        </div>
-                        <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
                                 <img src="resources/images/meet_amy.jpg" width="197" height="277" alt="Meet Amy!" class="center-block img-rounded">
-                        </div>
-                        </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         <!-- Begin Footer -->
         <div id="footer">

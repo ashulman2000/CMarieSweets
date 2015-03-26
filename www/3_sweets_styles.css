@@ -239,14 +239,36 @@ margin-top: -14px;
 margin-left: 1000px;	
 }
 
-#navwrapper {
+#navcontainer .navbar {
 	background: url(resources/textures/darkbrown_linen.png) repeat;
-	height: 52px;
-	width: 100%;
-	-webkit-box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.72);
-	-moz-box-shadow:    0px 2px 2px rgba(50, 50, 50, 0.72);
-	box-shadow:         0px 2px 2px rgba(50, 50, 50, 0.72);
-	}
+	font-family: 'Cardo', serif;
+	font-size: 24px;
+	margin-bottom: -2px;
+	border: none;
+}
+.navbar-default .navbar-nav>li>a {
+	color: white;
+	text-decoration: none;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: red;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+   .collapse {
+       display: none !important;
+   }
+}
+
+.carousel {
+	margin: -10px;
+}
+.carousel a.carousel-control {
+	color: white;
+}
+.carousel .carousel-control:hover {
+	color: pink;
+}
 
 #lace {
 	z-index: 89;
@@ -852,6 +874,9 @@ margin-right: auto;
   margin: auto;
   width: 50%;
   text-align: center;
+}
+.stitched-border.pink hr {
+	border-color: white;
 }
 .fancy-header {
   font: 25px 'bad script',serif;
