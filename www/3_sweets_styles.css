@@ -261,6 +261,13 @@ margin-left: 1000px;
 	position: relative;
 	padding: 10px;
 }
+.content-container.with-top-padding {
+	padding-top: 70px;
+}
+
+h1.big-header {
+	font: 50px 'dancing script',cursive,serif;
+}
 
 # navbar a {
 	float: left;
@@ -648,8 +655,6 @@ box-shadow: inset 0px 0px 7px 2px rgba(0,0,0,0.75);
    font-weight: normal;	
 	
 }
-
-.snap{}
 
 .headertext {
 font: 20pt'dancing script', cursive, serif;
