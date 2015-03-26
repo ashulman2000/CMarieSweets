@@ -844,6 +844,15 @@ margin-right: auto;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+.stitched-border.pink .bigger {
+  font: 130px'dancing script',cursive,serif;
+  text-align: center;
+}
+.stitched-border.pink .tagline {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
 .fancy-header {
   font: 25px 'bad script',serif;
 }
