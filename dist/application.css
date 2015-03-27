@@ -141,6 +141,9 @@ hr {
 h2 {
 	font-family: 'bad script', serif;
 }
+h3 {
+	font-family: 'bad script', serif;
+}
 
 .larger-text {
 	font-size: 20px;
@@ -303,8 +306,7 @@ h4.nice-header {
 	margin-left: auto;
 }
 
-.flavor .price {
-	display: block;
+.price {
 	color: #7D0552;
 }
 
