@@ -138,6 +138,14 @@ hr {
 	font-weight: normal;		
 }
 
+h2 {
+	font-family: 'bad script', serif;
+}
+
+.larger-text {
+	font-size: 20px;
+}
+
 /* End Tags & Common Styles */
 
 
@@ -156,6 +164,11 @@ hr {
 }
 .navbar-default .navbar-nav>li>a:hover {
 	color: red;
+}
+
+.navbar .current {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
 }
 
 @media (min-width: 768px) and (max-width: 1000px) {

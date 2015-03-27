@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* This stylesheet created by Levi Slaver on 4/24/13--  levislaver@gmail.com */
-
 
 /*Fonts*/
 
@@ -12,31 +10,14 @@
 
 /*End Fonts*/
 
-
-
-
 body {
 	background: url(resources/textures/asfalt_light.png) repeat fixed;
 }
 
-#boundaries {
-	max-width: 1000px;
-	width: 1000px;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top:20px;
-}
-
-
 #wrapper {
-	margin-top: -8px;
-	margin-right: auto;
-	margin-left: auto;
-	align: center;
-	width: 1000px;
-	height: auto;
 	padding-bottom: 50px;
+	padding-left: 0;
+	padding-right: 0;
 	background: url(resources/textures/cream_dust.png) repeat;
 	-moz-box-shadow: 0 0 30px -7px #000;
 	-webkit-box-shadow: 0 0 30px -7px #000;
@@ -48,14 +29,13 @@ body {
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
-
-
-#sticker {
-	width: 1000px;
-	height: auto;
-	z-index: 100;
+#nav-banner {
+	width: 100%;
 }
 
+.carousel-inner .item img {
+	width: 100%;
+}
 
 /* Tags & Common Styles */
 
@@ -111,73 +91,10 @@ hr {
 	margin-left: auto;
 }
 
-.hideme
-{
-   
-}
-
-.crosshatch {
-	background: url(resources/textures/cmariesitetexture.png) repeat;
-	
-	height: auto;
-	width: auto;
-	border: medium solid #999999;	
-	
-}
-
-.larger {
-	font-size: 24px;
-	
-}
-
-.36font {
-	font-size: 36px;
-}
-
 .floatmiddle {
-width: 100%;
-margin-left: auto;
-margin-right: auto;
-	
-}
-.stampborder {
-	border-style: solid;
-	border-width: 27px;
-	-moz-border-image: url(resources/images/stamp_border.html) 27 27 27 27 repeat repeat;
-	-webkit-border-image: url(resources/images/stamp_border.html) 27 repeat;
-	-o-border-image: url(resources/images/stamp_border.html) 27 repeat;
-	border-image: url(resources/images/stamp_border.html) 27 repeat;
-	box-shadow: 2px 2px 4px 1px #000000;
-	moz-box-shadow: 2px 2px 4px 1px #000000;
-	o-box-shadow: 2px 2px 4px 1px #000000;
-	webkit-box-shadow: 2px 2px 4px 1px #000000;
-	
-}
-
-.titlestitch {
-
-padding-left: 20px;
-padding-top: -5px;
-padding-bottom: -5px;
-  background: #ff0030;
-   color: #fff;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #fff;
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #aa3030;
-   font-weight: normal;		
-}
-
-.footerhr {
-width:auto;
-height:px;
-padding-top:0px;
-margin-top:0px;
-padding-bottom:5px;
-opacity:0;	
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .fullwidthstitch {
@@ -202,590 +119,208 @@ opacity:0;
 }
 
 .fullwidthstitch18 {
-	
-width: 800px;
-margin-left: auto;
-margin-right: auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 20px;
 	padding-bottom:20px;
-  background: #FFF;
-   color: #000;
-   font-size: 18px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #000;
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #CCC;
-   font-weight: normal;		
+	background: #FFF;
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.3em;
+	border: 2px dashed #000;
+	border-radius: 10px;
+	box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+	text-shadow: -1px -1px #CCC;
+	font-weight: normal;		
 }
 
-.26pxfont {
-font-size: 26px;	
+h2 {
+	font-family: 'bad script', serif;
+}
+
+.larger-text {
+	font-size: 20px;
 }
 
 /* End Tags & Common Styles */
 
 
-
 /* Navbar */
 
-#navcontainer {
-	
-}
-
-
-#triangleleft{
-	border-color: transparent #000 transparent transparent;
-	border-style:solid;
-	border-width:15px;
-	height:0px;
-	width:0px;
-	position: absolute;
-margin-top: -14px;
-margin-left: -30px;	
-}
-
-#triangleright{
-	border-color: transparent transparent transparent #000;
-	border-style:solid;
-	border-width:15px;
-	height:0px;
-	width:0px;
-	
-	position: absolute;
-margin-top: -14px;
-margin-left: 1000px;	
-}
-
-#navwrapper {
-	position: relative;
+#navcontainer .navbar {
 	background: url(resources/textures/darkbrown_linen.png) repeat;
-	height: 52px;
-	margin-top: -20px;
-	width: 1030px;
-	margin-left: -15px;
-	z-index: 90;
-	
-	-webkit-box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.72);
--moz-box-shadow:    0px 2px 2px rgba(50, 50, 50, 0.72);
-box-shadow:         0px 2px 2px rgba(50, 50, 50, 0.72);
-	
-	}
-	
-	
+	font-family: 'Cardo', serif;
+	font-size: 24px;
+	margin-bottom: -2px;
+	border: none;
+}
+.navbar-default .navbar-nav>li>a {
+	color: white;
+	text-decoration: none;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: red;
+}
+
+.navbar .current {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+   .collapse {
+       display: none !important;
+   }
+}
+
+.carousel {
+	margin: -10px;
+}
+.carousel a.carousel-control {
+	color: white;
+}
+.carousel .carousel-control:hover {
+	color: pink;
+}
+
 #lace {
 	z-index: 89;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.content-container {
 	position: relative;
-	margin-top: 0px;
+	padding: 10px;
+}
+.content-container.with-top-padding {
+	padding-top: 70px;
+}
+
+h1.big-header {
+	font: 50px 'dancing script',cursive,serif;
+} 
+h3.nice-header {
+  font: 25pt'dancing script',cursive,serif;
+}
+h4.nice-header {
+  font: 20pt'dancing script',cursive,serif;
 }
 
 # navbar a {
 	float: left;
 	display: block;
 }
-	
-#button {
-	padding: 0px;
-	line-height: 32px;
-	width: 1000px;
-	
-	align: center;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	left: -23px;
-}
-
-
-
-#button li {
-	display: inline;
-	width:100%;
-}
-
-#button li a {
-	position: relative;
-	
-	text-align: center;
-	text-decoration: none;
-	
-	float: left;
-	width:137px;
-	line-height: 32px;
-	
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-family: 'Cardo', serif;
-	font-size: 24px;
-	z-index: 35;
-	
-	color: #FFF;
-	background: url(resources/textures/darkbrown_linen.png) repeat;
-}
-
-#button li a:hover {
-	box-shadow: 2px 2px 4px 1px #000000;
-	moz-box-shadow: 2px 2px 4px 1px #000000;
-	o-box-shadow: 2px 2px 4px 1px #000000;
-	webkit-box-shadow: 2px 2px 4px 1px #000000;
-	
-	color: #C03;
-	/*
-	background: url(resources/textures/lightbrown_linen.png) repeat;
-    */
-}
-
-#button li a:active {
-	
-	
-	background: url(graphics/textures/lightbrown_linen.html) repeat;
-	box-shadow: 2px 2px 4px 1px #000000;
-	moz-box-shadow: 2px 2px 4px 1px #000000;
-	o-box-shadow: 2px 2px 4px 1px #000000;
-	webkit-box-shadow: 2px 2px 4px 1px #000000;
-	color: #fff;
-}
-
-
 
 .current {
-	
 	font-color: #c03;
 }
 
-	/* End Navbar */
+/* End Navbar */
 
 
-/* 					Begin Index Page Styles 					*/
-
-
-	
-/* Slider CSS */
-#sliceboxcontainer {
-	width: 1000px;
-	height: 550px;
-	position: absolute;
-	top: 156px;
-	z-index: 20;
-}
-
-.slidercontent {
-	width: auto;
-	height: auto;
-}
-
-.slidercontainer {
-	width: 1000px;
-	height: 550px;
-	position: absolute;
-	top: 156px;
-	z-index: 20;
-}
-
-.slidercontainerwedding {
-	width: 700px;
-	height: 350px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-/*	End Slider CSS */
-
-/* Begin Index Styles */
-
-.indexstitch {
-	width: 900px;
-	height: 500px;
-	
- padding-bottom: 30px;
-   margin-left: auto;
-   margin-right: auto;
-   
-   
-  background: #FF829B;
-   color: #fff;
-   font-color: #FFF;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #fff;
+.stitched-border {
+   border: 2px dashed #000;
    border-radius: 10px;
-   box-shadow: 0 0 0 4px #FF829B, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #aa3030;
-   font-weight: normal;	
+   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   font-size: 24px;
+   text-shadow: rgb(204, 204, 204) -1px -1px 0px;
+}
+.col-md-11.stitched-border {
+   margin-left: 4%;
+   margin-right: 4%;
+   padding: 10px;
+}
+.stitched-border h4 {
+  font: 20pt'dancing script',cursive,serif;
+}
+.stitched-border.pink {
+	background-color: #FF829B;
+	color: white;
+	font-family: 'bad script', serif;
+	font-size: 30px;
+	text-shadow: rgb(170, 48, 48) -1px -1px 0px;
+	border-color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.stitched-border.pink .bigger {
+  font: 80px'dancing script',cursive,serif;
+  text-align: center;
+}
+.stitched-border.pink .tagline {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+.stitched-border.pink hr {
+	border-color: white;
+}
+.fancy-header {
+  font: 25px 'bad script',serif;
 }
 
-
-#logo {
-	position: absolute;
-	
-	top: 85px;
-	left: 40px;
-	z-index: 85;
-}
-
-
-#secondsection {
-	opacity: 0;
-	z-index: 11;
-	margin-top:-10px;
-	padding-right: 50px;
-	padding-left: 50px;
-	
-	width: auto;
-	margin-right: auto;
-	margin-left: auto;
-	border-width: thick;
-}
-
-.textleft {
-	z-index: 7;
-	font: bold 130px 'Dancing Script', cursive, serif;
-	color: #FFf;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
-	margin-top: px;
-	paddin-bottom: -25px;
-	
-}
-.textmiddle {
-	z-index: 7;
-	font: bold 90px 'dancing script', cursive, serif;
-	color: #FFf;
-	text-align: center;
-	margin-top: -25px;
-}
-.indexshpeal {
-	z-index: 7;
-	font-color: #FFF;
-	font: 30px 'bad script', serif;
-	line-height: 140%;
-	width: 500px;
-	text-align: center;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: -10px;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-bottom: 40px;
-}
+/* Begin Index Page Styles */
 
 #curlleft {
 	z-index: 7;
-	margin-top: -155px;
-	margin-left: 20px;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
 }
 #curlright {
 	z-index: 7;
-	margin-left: 750px;
-	margin-top: -97px;
-}
-#curlcontainer {
-	
-	
-}
-
-
-
-.text100px {
-font-size: 100px;
-margin-top: -45px;	
-}
-
-#indexthirdsection {
-	width: auto;
-	padding-left: 50px;
-	padding-right: 50px;
-	margin-top: 30px;
-	padding-bottom: 30px;
-	opacity: 0;
-}
-
-#picbakersindex {
-	
-	margin-left: 25px;
-	/*border: medium solid #F9FFE3;
-	box-shadow: 0px 0px 3px .5px #000000;
-	moz-:0px 0px 3px .5px #000000 ;
-	o-:0px 0px 3px .5px #000000 ;
-	webkit-box-shadow:0px 0px 3px .5px #000000; 
-	*/
-}
-.textfloatleft {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	margin-top: 30px;
-	width: 700px;
-	
-	font: 20px 'cardo', serif;
-	color: #000000;
-	
-	
-}
-
-#indexwave {
-	height: auto;
-	margin-right: auto;
-	margin-left: auto;
 	position: absolute;
-	top: 715px;
-
-
+	bottom: 10px;
+	right: 10px;
 }
 
-#indexhr {
-	height: 6px;
-	margin-top: 505px;
-	width: 85%;
-	margin-left: auto;
-	margin-right: auto;
-}
+/* End Index Page Styles */
 
-
-/* 						End Index Page Styles								 */
-
-
-/* 				Begin Sweets Styles				 */
-
-.sweetstable {
-	font: 16px 'cardo', serif;
-	color: #000000;
-	width: 800px;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: center;
-}
-.sweetsstitch td {
-    vertical-align: text-top;
-}
-
+/* Begin Sweets Styles */
 
 .sweetsnames {
-	font-size: 16.5px;
+	font: 16.5px 'cardo', serif;
 	font-style: italic;
 	font-weight: bold;
 	color: #000000;
 	padding-bottom: 7px;
 	vertical-align: top;
+	text-align: center;
 }
 
-#cakepricingtext {
-width: 900px;
-height: auto;
-margin-left: auto;
-margin-right: auto;
-font-size: 18px;	
-}
-
-.textaligncenter {
-text-align: center;	
-}
-
-.cakesizingtable {
-	width: 800px;
-	margin-left: auto;
+.flavor {
+	padding: 15px;
+	text-align:center;
+	display: block;
 	margin-right: auto;
-}
-
-.sweetsstitch {
-	width: 800px;
 	margin-left: auto;
-	margin-right: auto;
-  background: #FFF;
-   color: #000;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #000;
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #CCC;
-   font-weight: normal;	
-	
 }
 
-	
+.flavor .price {
+	display: block;
+	color: #7D0552;
+}
 
 /* 				End Sweets Styles				 */
 
-
 /* 				Begin Wedding Styles				 */
 
-.packagetable{
-	width: 850px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 50px;
-}
-
-.innershadow{
-	z-index: 50;
-	width: 192px;
-	height: 288px;
-	-webkit-box-shadow: inset 0px 0px 7px 2px rgba(0,0,0,0.75);
--moz-box-shadow: inset 0px 0px 7px 2px rgba(0,0,0,0.75);
-box-shadow: inset 0px 0px 7px 2px rgba(0,0,0,0.75);
-}
-
-.weddingstitch {
-	z-index: 5;
-	width: 900px;
-	height: 400px;
-	margin-top: 0px;
- 	padding-bottom: 30px;
-  	margin-left: auto;
-  	margin-right: auto;
-  	background: #FF829B;
-	color: #fff;
-  	font-color: #FFF;
-	font-size: 21px;
-  	font-weight: bold;
-  	line-height: 1.3em;
-  	border: 2px dashed #fff;
-   	border-radius: 10px;
-   	box-shadow: 0 0 0 4px #FF829B, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   	text-shadow: -1px -1px #aa3030;
-   	font-weight: normal;	
-}
-
-.weddingcontentstitch {
-	z-index: 5;
-	width: auto;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
-  background: #FFF;
-   color: #000;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #000;
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #CCC;
-   font-weight: normal;	
-	
-}
-
-.snap{}
-
-.headertext {
-font: 20pt'dancing script', cursive, serif;
-padding-bottom: 4px;
-}
-
-.wedsection {
-	margin-top: auto;
-	margin-bottom: auto;
-	vertical-align: center;
-	height: 400px;
-	display:table-cell;
-vertical-align:middle;
-	font: 18pt 'Cardo', serif;
-	width: auto;
-	padding-right: 25px; 
-	
-}
-
-.wedpic {
-	float: left;
-	padding-left: 25px;
-	padding-right:25px;
-	display:block;
-	width:250px;
-	height:400px;
-}
-
-.wedpic1 {
-	float: left;
-	padding-top: 65px;
-	padding-left: 25px;
-	padding-right:25px;
-	display:block;
-	width:250px;
-	height:400px;
-}
-
-.wedpic2 {
-	float: left;
-	padding-top: 35px;
-	padding-left: 25px;
-	padding-right:25px;
-	display:block;
-	width:250px;
-	height:400px;
-}
-
-.wedcontainer {
-	width: 1000px;
-	height: 400px;
-	margin-top: 40px;
-}
-
-.weddingpackagestitch {
-	z-index: 5;
-	width: auto;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 20px;
-	padding-right: 20px;
-  background: #FFF;
-   color: #000;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #000;
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #CCC;
-   font-weight: normal;	
-	
-}
-
-.wedpackagecontainer {
-width: 1000px;
-height: auto;
-
-
-}
-
 #wedintrotext {
-	width: 800px;
-	height: auto;
+	/*width: 800px;
+	height: auto;*/
 	padding-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
 	font: italic 24px 'Cardo', serif;
-	margin-bottom: -60px;
 }
-	
-#weddingtable {
-decoration: none;
-padding-top: 10px;	
-
-}
-
-.wedimagetext {
-	font-color: #FFF;
-	font: 25px 'bad script', serif;
-	line-height: 140%;
-	width: auto;
-	text-align: center;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: -10px;
-}
-
 .wedtitle {
 	font: 50px 'dancing script', cursive, serif;
 	color: #000000;
@@ -795,68 +330,16 @@ padding-top: 10px;
 	margin-left: auto;
 }
 
-.packagetext {
-	width: 900px;
-	margin-left: auto;
-	margin-right: auto;
-	line-height: 1.1em;
-}
-
 /* 				End Wedding Styles				 */
 
 
 
 /* 				Begin Contact Styles				 */
 
-.tableleftmargin {
-	margin-left: 20px;
-	vertical-align: text-top;
-}
-
-#contacttable {
-	padding-top: 20px;
-	width: 800px;
-	margin-left: auto;
-	margin-right:auto;
-	text-vertical-align: top;
-	vertical-align: text-top;
-	text-align: left;
-	
-}
-
-.mapshadow {
-	
--moz-box-shadow: 0 0 17px -8px #000;
--webkit-box-shadow: 0 0 17px -8px #000;
-box-shadow: 0 0 17px -8px #000;
-}
-
-.contacthr {
-width: 500px;
-margin-left: auto;
-margin-right: auto;
-	
-}
-
-.contactstitch {
-	width: 900px;;
-	margin-left: auto;
-	margin-right: auto;
-	
-	padding-bottom: 10px;
-	padding-top: 10px;
-
-	
-  background: #FFF;
-   color: #000;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #000;
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #CCC;
-   font-weight: normal;	
+.facebook-like-box {
+	width: 100% !important;
+	height: 180px;
+	border-bottom: 1px solid #d8dfea;
 }
 
 /* 				End Contact Styles				 */
@@ -864,90 +347,11 @@ margin-right: auto;
 
 /*  Begin Meet the Bakers Styles   */
 
-.meetstitch {
-	width: 900px;
-	margin-left: auto;
-	margin-right: auto;
-	height: 290px;
-	padding-bottom: 15px;
-	padding-right: 20px;
-  background: #FFF;
-   color: #000;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #000;
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #CCC;
-   font-weight: normal;	
-	
-}
-
-.meetstitchamy {
-	width: 900px;
-	margin-left: auto;
-	margin-right: auto;
-	
-	padding-right: 20px;
-	height: 305px;
-  background: #FFF;
-   color: #000;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #000;
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #CCC;
-   font-weight: normal;	
-	
-}
-
 .meetname {
 font: 40px 'dancing script', cursive, serif;	
 }
 
-#meetchristine {
-	font: 18px 'Cardo', serif;
-	width: 600px;
-	margin-left: 25px;
-	
-}
-
-#picchristine {
-	margin-left: 700px;
-	margin-top: -295px;
-}
-
-#picamy {
-	margin-left: 25px;
-	padding-top: 15px;	
-}
-
-.insetshadowfix {
-	width: 197px;
-	height: 267px;
-	-moz-box-shadow: inset 7px 7px 7px -9px #000;
-	-webkit-box-shadow: inset 7px 7px 7px -9px #000;
-	box-shadow: inset 7px 7px 7px -9px #000;
-	
-
-	
-}
-
-#meetamy {
-	font: 18px 'Cardo', serif;
-	width: 600px;	
-	display: block;
-	margin-left: 250px;
-	margin-top: -260px;
-	
-}
-
-
 /*  End Meet the Bakers Styles   */
-
 
 /* 						Begin Gallery Styles 									*/
 
@@ -957,44 +361,6 @@ font-size: 21px;
 margin-left: auto;
 margin-right: auto;
 width: 600px;
-}
-
-.albumTitle{
-	padding-top: 20px;
-	padding-bottom: 30px;
-	font: 40px 'dancing script', cursive, serif;
-	color: #000000;
-	width: 100%;
-	text-align: center;
-	display:block;
-	margin-right: auto;
-	margin-left: auto;	
-}
-
-.albumTitle a{
-	padding-top: 20px;
-	padding-bottom: 30px;
-	font: 40px 'dancing script', cursive, serif;
-	color: #000000;
-	width: 100%;
-	text-align: center;
-	display:block;
-	margin-right: auto;
-	margin-left: auto;	
-	text-decoration: none;
-}
-
-.albumTitle a:hover{
-	padding-top: 20px;
-	padding-bottom: 30px;
-	font: 40px 'dancing script', cursive, serif;
-	color: #C03;
-	width: 100%;
-	text-align: center;
-	display:block;
-	margin-right: auto;
-	margin-left: auto;	
-	text-decoration: none;
 }
 
 .galleryhr {
@@ -1024,129 +390,9 @@ margin-right: auto;
 	
 }
 
-.gallerytable {
-	width: 950px;
-	border-style: none;
-	list-style: none;	
-	text-align: center;
-	margin-left:auto;
-	margin-right: auto;
-	vertical-align: auto;
-}
-
-/*
-.gallerytable td {
-		width: auto;
-	height: auto;
-	padding-left: 5px;
-		padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-  background: #FFF;
-   color: #000;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #000;
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #CCC;
-   font-weight: normal;	
-	
-}
-*/
-
-
-.gallerytable td {
-		width: auto;
-	height: auto;
-	padding-left: 5px;
-		padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-  background: #FFF;
-   color: #000;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;
-   
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #CCC;
-   font-weight: normal;	
-	
-}
-
-.gallerytable td img{
-		
-  -moz-box-shadow:inset 1px 1px 0px #000000;
--webkit-box-shadow:inset 1px 1px 0px #000000;
-box-shadow:inset 1px 1px 0px #000000;
-
-	
-}
-
-.galleryAlbums {
-	width: 250px;
-	height: 550px;	
-	float: left;
-	padding-left: 20px;
-	position: relative;
-}
-
-
-.gallerytablebars {
-		width: 1000;
-	height: auto;
-	padding-left: 5px;
-		padding-right: 5px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-  background: #FFF;
-   color: #000;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #000;
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #CCC;
-   font-weight: normal;	
-	
-}
-
-
-
-.gallerycenter {
-margin-left: 85px;
-}
-
 
 /* 						End Gallery Styles 									*/
 
-
-/* 						Begin Testimonies Styles 							*/
-
-.testimoniesstitch {
-	width: 925px;
-	height:auto;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 15px;
-	
- 	background: #FFF;
-   color: #000;
-   font-size: 18px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #000;
-   border-radius: 10px;
-   box-shadow: 0 0 0 4px #FFF, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-   text-shadow: -1px -1px #CCC;
-   font-weight: normal;	
-}
-
-/* 						End Testimonies Styles 							*/
 
 /* 						Begin Savories Styles 							*/
 
@@ -1156,25 +402,6 @@ margin-left: 85px;
 	padding-right: 15px;
 	font-size: 16px;
 	}
-	
-.savorystitch {
-	width: 900px;
-	height: 85px;
-	padding-top: 20px;
-	background: #FF829B;
-	color: #fff;
-	font-color: #FFF;
-	font-size: 21px;
-	font-weight: bold;
-	line-height: 1.3em;
-	border: 2px dashed #fff;
-	border-radius: 10px;
-	box-shadow: 0 0 0 4px #FF829B, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
-	text-shadow: -1px -1px #aa3030;
-	font-weight: normal;
-	margin: auto;
-}
-	
 
 /* 						End Savories Styles 							*/
 
@@ -1182,7 +409,7 @@ margin-left: 85px;
 
 #footer {
 	z-index: -2;
-	width: 1000px;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	height: 15px;
@@ -1209,9 +436,6 @@ margin-left: 85px;
 	margin-right: 5px;
 	
 }
-
-
-
 
 #footerlinks{
 	
@@ -1257,8 +481,6 @@ box-shadow:         7px 7px 0px rgba(50, 50, 50, 0.75);
 	margin-left: auto;
 }
 
-
-
 /* Redirect Styles */
 
 #wrapperredirect {
@@ -1280,15 +502,4 @@ box-shadow:         7px 7px 0px rgba(50, 50, 50, 0.75);
 	-moz-border-radius-bottomleft: 10px;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
-}
-
-.textcenter {
-	margin-top: auto;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: auto;
-	text-align: center;
-	text-vertical-align: center;
-	
-	
 }
