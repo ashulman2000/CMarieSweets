@@ -15,3 +15,11 @@ Run `npm install`
 Run `npm install -g grunt-cli`
 
 Run `grunt`
+
+
+To Deploy
+========
+
+Run `grunt build`
+
+The 'dist' folder contains everything you need to deploy. DO NOT deploy the www directory. Just what is inside 'dist'.
