@@ -180,6 +180,17 @@ h3 {
    }
 }
 
+@media (min-width: 768px) {
+	.mobile-menu-text{	
+		display: none;
+	}
+}
+
+.mobile-menu-text {
+	color: white;
+	margin: 5px;
+}
+
 .carousel {
 	margin: -10px;
 }
